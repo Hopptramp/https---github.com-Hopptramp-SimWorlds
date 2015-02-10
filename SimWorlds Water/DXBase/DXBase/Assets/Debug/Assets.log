@@ -1,0 +1,14 @@
+﻿Build started 10/02/2015 20:45:52.
+     1>Project "C:\Users\Rob\Desktop\CURRENT UNI WORK\SimWorlds Water\DXBase\DXBase\Assets\Assets.vcxproj" on node 3 (Rebuild target(s)).
+     1>_ImageContentTask:
+         grass.jpg
+         white.jpg
+         logo.png
+       _MeshContentTask:
+         table.FBX
+         treasure_chest.FBX
+     1>Done Building Project "C:\Users\Rob\Desktop\CURRENT UNI WORK\SimWorlds Water\DXBase\DXBase\Assets\Assets.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.29
