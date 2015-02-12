@@ -31,6 +31,7 @@ protected:
 	//see Spirla, SpikedVB and Pillow
 	
 	virtual void Transform();
+	virtual void TransformSize();
 
 	int m_size;
 	myVertex* m_vertices;

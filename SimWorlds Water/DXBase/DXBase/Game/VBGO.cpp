@@ -63,7 +63,7 @@ VBGO::~VBGO()
 	if (m_pPixelShader) m_pPixelShader->Release();
 	if (m_pTextureRV) m_pTextureRV->Release();
 	if (m_pConstantBuffer) m_pConstantBuffer->Release();
-	//if (m_pCB) delete m_pCB; delete this where created as there will know its type
+	//if (m_pCB) delete m_pCB;// delete this where created as there will know its type
 	if (m_pSampler) m_pSampler->Release();
 	if (m_pRasterState) m_pRasterState->Release();
 }
@@ -85,9 +85,9 @@ void VBGO::Draw(DrawData* _DD)
 	s_pCB->rot = m_rotMat.Transpose();
 
 	//Set vertex buffer
-	UINT stride = sizeof(myVertex);
-	UINT offset = 0;
-	_DD->pd3dImmediateContext->IASetVertexBuffers(0, 1, &m_VertexBuffer, &stride, &offset);
+	//UINT stride = sizeof(myVertex);
+	//UINT offset = 0;
+	//_DD->pd3dImmediateContext->IASetVertexBuffers(0, 1, &m_VertexBuffer, &stride, &offset);
 
 	// Set index buffer
 	_DD->pd3dImmediateContext->IASetIndexBuffer(m_IndexBuffer, DXGI_FORMAT_R16_UINT, 0);

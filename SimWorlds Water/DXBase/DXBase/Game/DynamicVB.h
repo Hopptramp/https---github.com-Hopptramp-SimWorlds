@@ -7,7 +7,11 @@
 class DynamicVB :public VBGO
 {
 public:
-	DynamicVB(){};
+	DynamicVB()
+	
+	{
+		m_dynamicVertexBuffer = NULL;
+	};
 	virtual ~DynamicVB(){};
 
 	virtual void Tick(GameData* _GD);
@@ -15,9 +19,9 @@ public:
 
 protected:
 
-	
-
 	void Render();
+
+	ID3D11Buffer* m_dynamicVertexBuffer;
 
 	//once populated build an Index Buffer
 	void BuildIB(ID3D11Device* _GD, void* _indices);

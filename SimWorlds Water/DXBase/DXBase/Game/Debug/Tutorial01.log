@@ -1,20 +1,20 @@
-﻿Build started 10/02/2015 23:01:31.
-     1>Project "C:\Users\Rob\Desktop\CURRENT UNI WORK\SimWorlds Water\DXBase\DXBase\Game\Tutorial01.vcxproj" on node 2 (Build target(s)).
+﻿Build started 12/02/2015 00:58:26.
+     1>Project "C:\Users\Rob\Documents\GitHub\https---github.com-Hopptramp-SimWorlds.git\SimWorlds Water\DXBase\DXBase\Game\Tutorial01.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\Inc /I..\DXUT\Core /I..\DXUT\Optional /ZI /nologo /W4 /WX- /Od /Oi /Oy- /D WIN32 /D _DEBUG /D DEBUG /D PROFILE /D _WINDOWS /D _WIN32_WINNT=0x0600 /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /openmp- /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt  DynamicCube.cpp
          DynamicCube.cpp
-     1>c:\users\rob\desktop\current uni work\simworlds water\dxbase\dxbase\game\constantbuffer.h(23): warning C4324: 'ConstantBuffer' : structure was padded due to __declspec(align())
+     1>c:\users\rob\documents\github\https---github.com-hopptramp-simworlds.git\simworlds water\dxbase\dxbase\game\constantbuffer.h(23): warning C4324: 'ConstantBuffer' : structure was padded due to __declspec(align())
          c:\program files (x86)\windows kits\8.1\include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-     1>c:\users\rob\desktop\current uni work\simworlds water\dxbase\dxbase\game\dynamiccube.cpp(19): warning C4244: '=' : conversion from 'int' to 'WORD', possible loss of data
-     1>c:\users\rob\desktop\current uni work\simworlds water\dxbase\dxbase\game\dynamiccube.cpp(50): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\rob\desktop\current uni work\simworlds water\dxbase\dxbase\game\dynamiccube.cpp(52): warning C4244: 'initializing' : conversion from 'int' to 'WORD', possible loss of data
-     1>c:\users\rob\desktop\current uni work\simworlds water\dxbase\dxbase\game\dynamiccube.cpp(53): warning C4244: 'initializing' : conversion from 'int' to 'WORD', possible loss of data
-     1>c:\users\rob\desktop\current uni work\simworlds water\dxbase\dxbase\game\dynamiccube.cpp(54): warning C4244: 'initializing' : conversion from 'int' to 'WORD', possible loss of data
-     1>c:\users\rob\desktop\current uni work\simworlds water\dxbase\dxbase\game\dynamiccube.cpp(75): warning C4100: 'GD' : unreferenced formal parameter
-     1>c:\users\rob\desktop\current uni work\simworlds water\dxbase\dxbase\game\dynamiccube.cpp(105): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\rob\desktop\current uni work\simworlds water\dxbase\dxbase\game\dynamiccube.cpp(117): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\rob\documents\github\https---github.com-hopptramp-simworlds.git\simworlds water\dxbase\dxbase\game\dynamiccube.cpp(19): warning C4244: '=' : conversion from 'int' to 'WORD', possible loss of data
+     1>c:\users\rob\documents\github\https---github.com-hopptramp-simworlds.git\simworlds water\dxbase\dxbase\game\dynamiccube.cpp(51): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\rob\documents\github\https---github.com-hopptramp-simworlds.git\simworlds water\dxbase\dxbase\game\dynamiccube.cpp(53): warning C4244: 'initializing' : conversion from 'int' to 'WORD', possible loss of data
+     1>c:\users\rob\documents\github\https---github.com-hopptramp-simworlds.git\simworlds water\dxbase\dxbase\game\dynamiccube.cpp(54): warning C4244: 'initializing' : conversion from 'int' to 'WORD', possible loss of data
+     1>c:\users\rob\documents\github\https---github.com-hopptramp-simworlds.git\simworlds water\dxbase\dxbase\game\dynamiccube.cpp(55): warning C4244: 'initializing' : conversion from 'int' to 'WORD', possible loss of data
+     1>c:\users\rob\documents\github\https---github.com-hopptramp-simworlds.git\simworlds water\dxbase\dxbase\game\dynamiccube.cpp(76): warning C4100: 'GD' : unreferenced formal parameter
+     1>c:\users\rob\documents\github\https---github.com-hopptramp-simworlds.git\simworlds water\dxbase\dxbase\game\dynamiccube.cpp(109): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\rob\documents\github\https---github.com-hopptramp-simworlds.git\simworlds water\dxbase\dxbase\game\dynamiccube.cpp(126): warning C4018: '<' : signed/unsigned mismatch
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Rob\Desktop\CURRENT UNI WORK\SimWorlds Water\DXBase\DXBase\Debug\Game.exe" /INCREMENTAL /NOLOGO d3d11.lib d3dcompiler.lib dxguid.lib winmm.lib comctl32.lib DirectXTK.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib DXUT.lib DXUTOpt.lib usp10.lib dinput8.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"C:\Users\Rob\Desktop\CURRENT UNI WORK\SimWorlds Water\DXBase\DXBase\Debug\Game.pdb" /SUBSYSTEM:WINDOWS /LARGEADDRESSAWARE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Rob\Desktop\CURRENT UNI WORK\SimWorlds Water\DXBase\DXBase\Debug\Game.lib" /MACHINE:X86 /SAFESEH  Debug\Tutorial01.res
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Rob\Documents\GitHub\https---github.com-Hopptramp-SimWorlds.git\SimWorlds Water\DXBase\DXBase\Debug\Game.exe" /INCREMENTAL /NOLOGO d3d11.lib d3dcompiler.lib dxguid.lib winmm.lib comctl32.lib DirectXTK.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib DXUT.lib DXUTOpt.lib usp10.lib dinput8.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"C:\Users\Rob\Documents\GitHub\https---github.com-Hopptramp-SimWorlds.git\SimWorlds Water\DXBase\DXBase\Debug\Game.pdb" /SUBSYSTEM:WINDOWS /LARGEADDRESSAWARE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Rob\Documents\GitHub\https---github.com-Hopptramp-SimWorlds.git\SimWorlds Water\DXBase\DXBase\Debug\Game.lib" /MACHINE:X86 /SAFESEH  Debug\Tutorial01.res
          Debug\camera.obj
          Debug\CMOGO.obj
          Debug\DynamicCube.obj
@@ -31,10 +31,9 @@
          Debug\Tutorial01.obj
          Debug\VBCube.obj
          Debug\VBGO.obj
-     1>camera.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
-         Tutorial01.vcxproj -> C:\Users\Rob\Desktop\CURRENT UNI WORK\SimWorlds Water\DXBase\DXBase\Debug\Game.exe
-     1>Done Building Project "C:\Users\Rob\Desktop\CURRENT UNI WORK\SimWorlds Water\DXBase\DXBase\Game\Tutorial01.vcxproj" (Build target(s)).
+         Tutorial01.vcxproj -> C:\Users\Rob\Documents\GitHub\https---github.com-Hopptramp-SimWorlds.git\SimWorlds Water\DXBase\DXBase\Debug\Game.exe
+     1>Done Building Project "C:\Users\Rob\Documents\GitHub\https---github.com-Hopptramp-SimWorlds.git\SimWorlds Water\DXBase\DXBase\Game\Tutorial01.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:04.25
+Time Elapsed 00:00:01.97

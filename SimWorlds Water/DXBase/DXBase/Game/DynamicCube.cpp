@@ -45,7 +45,8 @@ void DynamicCube::init(int _size, ID3D11Device* GD)
 
 	//carry out some kind of transform on these vertices to make this object more interesting
 	Transform();
-
+	TransformSize();
+		
 	//calculate the normals for the basic lighting in the base shader
 	for (int i = 0; i<m_numPrims; i++)
 	{
@@ -84,11 +85,13 @@ void DynamicCube::Draw(DrawData* _DD)
 	ZeroMemory(&mappedResource, sizeof(D3D11_MAPPED_SUBRESOURCE));
 
 	//Disable GPU access to the vertex buffer data.
-	_DD->pd3dImmediateContext->Map(m_VertexBuffer, 0, D3D11_MAP_WRITE_DISCARD, 0, &mappedResource);
+	_DD->pd3dImmediateContext->Map(m_dynamicVertexBuffer, 0, D3D11_MAP_WRITE_DISCARD, 0, &mappedResource);
+
 	//Update the vertex buffer here.
 	memcpy(mappedResource.pData, m_vertices, sizeof(m_vertices));
+	
 	//Reenable GPU access to the vertex buffer data.
-	_DD->pd3dImmediateContext->Unmap(m_VertexBuffer, 10);
+	_DD->pd3dImmediateContext->Unmap(m_dynamicVertexBuffer, 1);
 
 	DynamicVB::Draw(_DD);
 }
@@ -104,18 +107,6 @@ void DynamicCube::Transform()
 {	
 		for (int i = 0; i < m_numPrims * 3; i++)
 		{
-			Vector3 vertPos = m_vertices[i].Pos;
-
-			Matrix scaleMat = Matrix::CreateScale(10.0f, 1.0f, 10.0f);
-
-			Vector3 newPos = Vector3::Transform(vertPos, scaleMat);
-
-			m_vertices[i].Pos = newPos;
-		}
-
-
-		for (int i = 0; i < m_numPrims * 3; i++)
-		{
 			float sineWave = amp * sin(((2 * pi*freq)*time) + phase);
 
 			float vertPos = m_vertices[i].Pos.y;
@@ -126,5 +117,19 @@ void DynamicCube::Transform()
 
 			time = time + 10;
 			phase = phase + (3 * i);
-		}
+		}		
 };
+
+void DynamicCube::TransformSize()
+{
+	for (int i = 0; i < m_numPrims * 3; i++)
+	{
+		Vector3 vertPos = m_vertices[i].Pos;
+
+		Matrix scaleMat = Matrix::CreateScale(10.0f, 1.0f, 10.0f);
+
+		Vector3 newPos = Vector3::Transform(vertPos, scaleMat);
+
+		m_vertices[i].Pos = newPos;
+	}
+}

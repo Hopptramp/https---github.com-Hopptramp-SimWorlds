@@ -18,6 +18,13 @@ void DynamicVB::Tick(GameData* _GD)
 
 void DynamicVB::Draw(DrawData* _DD)
 {
+
+
+	//Set vertex buffer
+	UINT stride = sizeof(myVertex);
+	UINT offset = 0;
+	_DD->pd3dImmediateContext->IASetVertexBuffers(0, 1, &m_dynamicVertexBuffer, &stride, &offset);
+	
 	VBGO::Draw(_DD);
 }
 
@@ -54,7 +61,7 @@ void DynamicVB::BuildVB(ID3D11Device* _GD, int _numVerts, void* _vertices)
 	bd.CPUAccessFlags = D3D11_CPU_ACCESS_WRITE;
 	ZeroMemory(&InitData, sizeof(InitData));
 	InitData.pSysMem = _vertices;
-	hr = _GD->CreateBuffer(&bd, &InitData, &m_VertexBuffer);
+	hr = _GD->CreateBuffer(&bd, &InitData, &m_dynamicVertexBuffer);
 }
 
 void Render(DrawData*_DD)
